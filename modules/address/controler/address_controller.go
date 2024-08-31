@@ -55,7 +55,7 @@ func UpdateAddress(c *gin.Context){
 		c.JSON(http.StatusNotFound, gin.H{"status":false, "message":"Address not found by Id"})
 	}
 
-	c.JSON(http.StatusOK, gin.H{"status":false, "message":"Address updated", "order":result})
+	c.JSON(http.StatusOK, gin.H{"status":true, "message":"Address updated", "order":result})
 }
 
 func GetAllAddress(c *gin.Context){
