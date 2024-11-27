@@ -9,7 +9,6 @@ import (
 )
 
 func RouteList(router *gin.Engine){
-
 	// Order routes
 	order.OrderRoutes(router)
 

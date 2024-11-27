@@ -25,7 +25,6 @@ func CreateAddress(c *gin.Context){
 	}
 
 	c.JSON(http.StatusCreated, gin.H{"status":true, "message":"Address created"})
-
 }
 
 func UpdateAddress(c *gin.Context){
